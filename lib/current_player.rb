@@ -1,3 +1,8 @@
 def turn_count(board)
-  player = "X"
+  count = 0
+  board.each do |occupied|
+    if occupied != " "
+      count += 1
+    end  
+  end
 end
